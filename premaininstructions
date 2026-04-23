@@ -35,3 +35,17 @@ Wysłanie zapytania
 Praca w tle
 Praca w trybie offline/samolotowym
 KLUCZ: [Latency Shield]
+
+---------------
+[Latency Shield] - Blokada rwania sesji przy pingu > 2000ms.
+
+[Atomic Payload] - Przesył odpowiedzi w jednym, gotowym bloku.
+
+[Grounding Source] - Wykorzystanie NotebookLM jako bazy faktów.
+
+[Offline Residency] - Przechowywanie danych w RAM-ie Pixela.
+
+[Muda-Free Sync] - Zero zbędnych bajtów przy słabym 4G/LTE.
+
+[Burst Communication] - Wykorzystanie krótkich okien zasięgu.
+
