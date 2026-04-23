@@ -1,0 +1,37 @@
+Protokół Terenowy: Konfiguracja i Transmisja Danych Offline
+
+KONFIGURACJA: TRYB TERENOWY (OFFLINE RESILIENCE).
+    Protokół stworzony na potrzeby tych momentów, w których kontakt ze światem jest bardzo utrudniony ze względu na geografię terenu.
+    Góry, lasy i doliny, to miejsca, w których konwencjonalna sieć kompletnie sobie nie radzi. Nowoczesny sposob przesyłania
+    danych jest bardzo czuły na przerwy w dostawach internetu, co w utrudnionych warunkach podowuje praktycznie całkowity paraliż 
+    i brak kontaktu ze światem.
+    
+CEL: Pozyskanie danych przy ekstremalnie słabym zasięgu (4G/LTE/Ping 2000ms+).
+
+
+ZASADY KOMUNIKACJI:
+
+#Użycie [Atomic Payload] (brak streamingu).
+  Wyłączając streaming, i stosując metodę Atomic Payload, czyli ograniczanie użycia tekstu do minimum oraz pózniejsze
+  spakowanie w jedną "paczkę". Wykorzystuanie maksymalnego wydłużenia Latency - czasu oczekiwania na odpowiedź z servera,
+  powoduje zdeydowanie lepsze rezultaty niż konwencjonalne streamowanie, które nie przepuszcza promptów lub je po chwili ucina.
+
+##tryb terenowy” [Latency Shield]ma umożliwić skuteczną pracę z danymi w warunkach ekstremalnie słabego zasięgu internetowego(2000ms+).
+  W tym celu na telefonie, jeśli jest to możliwe, wykorzystuje się chat AI, jesli sytuacja jest jednak trudniejsza
+  i chat nie uruchamia się, należy wykorzystać aplikację Dyktafon( bez transkrypcji - tą zosotanie wykonana już w chmurze).
+  
+##Przygotowanie Master Report na podstawie tokenów kontrolnych, oraz spakowanie wiadomości w jeden spójny plik(zip). 
+
+###Wysyłka na server. API postawione na serwerze, odwraca proces, wyodrębnia zapytanie, po czym odpowiada i pakuje kolejną paczkę.
+
+####Przygotowana paczka, NIE zostaje automatycznie wysłana, agent w chmurze czeka na sygnał od agenta,
+aż ten znowu znajdzie zasięg internetowy. Przy szybkosciach internetu w 2026 roku, paczka taka przechodzi bez zauważenia latencji.
+
+#####Warto też zauważyć, że dzisiejszy internet nie rozumie tego typu dokumentów, żeby moc je w jakis sposób podglądnąć czy wykraść. 
+Wysyłka tego typu  encrypted text files, ogranicza prawdopodobieństwo data lekage. 
+
+Maksymalna kompresja treści (brak uprzejmości i stopek)
+Wysłanie zapytania
+Praca w tle
+Praca w trybie offline/samolotowym
+KLUCZ: [Latency Shield]
